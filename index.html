@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel-Spiel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Verdiene dir dein Geschenk!</h2>
+
+    <div id="step1">
+        <h4>Starte mit Brief Nummer 7.</h4>
+        <h3>Welche Zahl hast du erkannt?</h3>
+        <input type="number" id="puzzleZahl">
+        <button onclick="checkPuzzle()">Weiter</button>
+        <p id="puzzleResult"></p>
+    </div>
+
+    <div id="step2" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 6.</h4>
+        <h3>Gib die richtigen Zahlen ein</h3>
+        <input type="number" id="bday" placeholder="Geburtstag">
+        <input type="number" id="urlaub" placeholder="Urlaube">
+        <input type="number" id="alter" placeholder="Alter">
+        <button onclick="checkNumbers()">Weiter</button>
+        <p id="numbersResult"></p>
+    </div>
+
+    <div id="step3" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 3.</h4>
+        <h3>Welche Blume bin ich?</h3>
+        <input type="text" id="flower" placeholder="Blume">
+        <button onclick="checkFlower()">Weiter</button>
+        <p id="flowerResult"></p>
+    </div>
+
+    <div id="step4" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 8.</h4>
+        <h3>Mahlzeit</h3>
+        <input type="text" id="food" placeholder="Essen">
+        <button onclick="checkFood()">Weiter</button>
+        <p id="foodResult"></p>
+    </div>
+
+    <div id="step5" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 2.</h4>
+        <h3>Welches Wort verbergen diese Lippen?</h3>
+        <input type="text" id="kiss" placeholder="Wort">
+        <button onclick="checkKiss()">Weiter</button>
+        <p id="kissResult"></p>
+    </div>
+
+    <div id="step6" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 5.</h4>
+        <h3>Wo ist sie versteckt?</h3>
+        <input type="text" id="coin" placeholder="versteckt">
+        <button onclick="checkCoin()">Weiter</button>
+        <p id="coinResult"></p>
+    </div>
+
+    <div id="step7" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 1.</h4>
+        <h3>2 von 5</h3>
+        <input type="text" id="car" placeholder="Lieblingsauto">
+        <input type="text" id="phone" placeholder="Handymarke">
+        <input type="text" id="fashion" placeholder="Modemarke">
+        <input type="text" id="friend" placeholder="Studienfreund">
+        <input type="text" id="job" placeholder="Firma">
+        <button onclick="checkQuestions()">Weiter</button>
+        <p id="questionsResult"></p>
+    </div>
+
+    <div id="step8" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 4.</h4>
+        <h3>Sport-Challenge</h3>
+        <div id="sportsFields"></div>
+        <button onclick="checkSports()">Weiter</button>
+        <p id="sportsResult"></p>
+    </div>
+
+    <div id="step9" class="hidden">
+        <h4>Weiter gehts mit Brief Nummer 9.</h4>
+        <h3>Welche Farbe?</h3>
+        <input type="text" id="choice" placeholder="Farbe">
+        <button onclick="checkChoice()">Weiter</button>
+        <p id="choiceResult"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
